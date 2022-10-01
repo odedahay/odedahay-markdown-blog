@@ -39,7 +39,7 @@ export default function Search() {
         </div>
       </div>
 
-      {/* <SearchResults results={searchResults} /> */}
+      <SearchResults results={searchResults} />
     </div>
   )
 }
