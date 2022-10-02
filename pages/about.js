@@ -4,8 +4,8 @@ import Image from "next/image"
 export default function AboutPage() {
   return (
     <Layout title='About Dash Off Blog'>
-        <h1 className="text-5xl border-b-4 pb-5 font-bold">ABOUT ME</h1>
-        <div className='bg-white shadow-md rounded-lg px-10 py-6 mt-6'>
+        <h1 className="text-5xl border-b-4 border-color pb-5 font-bold headline">ABOUT ME</h1>
+        <div className='bg-yellow-50 shadow-md_ border rounded-lg px-10 py-6 mt-6'>
         <h3 className='text-2xl mb-5'>{" Hi, there! I'm Rodel and my friends called me 'Ode'"}</h3>
           <Image src='/images/odedahay-logo.jpeg' width={600} height={408} alt='Evolution of logo' />
           <p>I'm a UX/UI designer and seasonal developer. I have a passion for creating websites and love to developing interactive designs</p>
