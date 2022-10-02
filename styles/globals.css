@@ -1,7 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+
+:root {
+  /* --front-btn: #e77f2bfb; */
+  --front-btn: #333;
+  --black: #333;
+  --orange-color: #ff7902;
+  --cream-color: #fffbec;
+  --bs-orange-rgb: 255, 121, 2;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-cream-rgb: 255, 251, 236;
+  --darkgray-color: #4e4e4e;
+  --modal-duration: 1s;
+  --bs-bg-opacity: 0;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+.headline{
+  color: #333;
+  font-size: 4.3rem;
+  font-family: 'Bangers', cursive;
+  line-height: 3.7rem;
+  margin-bottom: 20px;
+}
+
+.text-goback{
+  color: #333;
+  font-size: 1.8rem;
+  font-family: 'Bangers', cursive;
+  line-height: 1.8rem;
+}
+
+.border-color{
+  border-color: rgb(251 238 191)!important;
+}
+
+.bg-cream {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-cream-rgb),var(--bs-bg-opacity))!important;
+}
 
 p {
     margin: 15px 0;

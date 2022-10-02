@@ -6,6 +6,7 @@ import matter from 'gray-matter'
 import Link from 'next/link'
 import Layout from '../../components/Layout'
 import CategoryLabel from '../../components/CategoryLabel'
+import {FaArrowLeft } from 'react-icons/fa'
 
 export default function PostPage({
     frontmatter: { title, category, date, cover_image, author, author_image }, 
@@ -15,8 +16,13 @@ export default function PostPage({
    
   return(
         <Layout title={title}>
-            <Link href='/blog'>Go Back</Link>
-            <div className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'>
+            <Link href='/blog'>
+                <a className='flex items-center'>
+                    <FaArrowLeft />
+                    <span className='text-goback ml-1'>Go Back</span>
+                </a>
+            </Link>
+            <div className='w-full px-10 py-6 bg-yellow-50 rounded-lg shadow-md_ border mt-6'>
                 <div className='flex justify-between items-center mt-4'>
                     <h1 className='text-5xl mb-7'>{title}</h1>
                     <CategoryLabel>{category}</CategoryLabel>
